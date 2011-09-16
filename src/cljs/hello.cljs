@@ -1,10 +1,9 @@
-(ns libertine.hello
-  (:require [goog.dom :as dom]
-            [raphael.js :as r]))
+(ns template.hello
+  (:require [goog.dom :as dom]))
 
 (defn init []
   (js/alert "Hello!")
-  (def paper (r/Raphael. 10 50 320 200))
+  (def paper (js/Raphael. 10 50 320 200))
 
   (def circle (. paper (circle 50 40 10)))
 

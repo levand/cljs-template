@@ -1,6 +1,5 @@
 (ns template.hello
-  (:require [goog.dom :as dom]
-            [raphael]))
+  (:require [goog.dom :as dom]))
 
 (defn ^:export init []
   (js/alert "Hello!")

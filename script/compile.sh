@@ -1,9 +1,11 @@
 #!/bin/bash
 
+
 CP=''
-CP=$CP:$CLOJURE_HOME/clojure.jar
 CP=$CP:$CLOJURESCRIPT_HOME/lib/*
 CP=$CP:$CLOJURESCRIPT_HOME/src/clj
 CP=$CP:$CLOJURESCRIPT_HOME/src/cljs
 
-java -server -cp $CP clojure.main compile.clj
+DIR=`dirname $0`
+
+java -server -cp $CP clojure.main $DIR/compile.clj
